@@ -14,7 +14,7 @@
 namespace
 {
     constexpr bn::fixed speed = 2;
-    constexpr bn::fixed half_size = 8;
+    constexpr bn::fixed half_size = 16;
     constexpr bn::fixed max_x = (bn::display::width() / 2) - half_size;
     constexpr bn::fixed max_y = (bn::display::height() / 2) - half_size;
 }

@@ -1,12 +1,12 @@
 # gba-test-pub
 
 A small Game Boy Advance project built with [Butano](https://github.com/GValiente/butano) (21.9.0).
-It shows a title and a sprite you can move around the screen.
+It greets you and lets you move Sprig, an original seedling creature, around the screen.
 
 ## Controls
 
-- **D-Pad**: move the sprite
-- **A**: return the sprite to the center
+- **D-Pad**: move Sprig
+- **A**: return Sprig to the center
 
 ## Building
 
@@ -42,4 +42,4 @@ CI builds the ROM on every push (see `.github/workflows/build.yml`) and uploads 
 | `graphics/` | Images (indexed BMP + JSON descriptor per asset) |
 | `audio/`, `dmg_audio/` | Music and sound effects (empty for now) |
 | `butano/` | Butano engine, as a git submodule |
-| `tools/make_player_bmp.py` | Regenerates `graphics/player.bmp` |
+| `tools/make_player_bmp.py` | Draws Sprig into `graphics/player.bmp` (`--preview out.png` for an enlarged PNG) |
