@@ -497,7 +497,7 @@ void player::_update_graphics()
             {
                 frame = FRAME_WINDUP;
                 _slash_sprite.set_tiles(bn::sprite_items::spr_slash.tiles_item(), 0);
-                _slash_sprite.set_position(_body.x - (_facing * 6), _body.y - 28);
+                _slash_sprite.set_position(_body.x - (_facing * 4), _body.y - 22);
             }
             else
             {

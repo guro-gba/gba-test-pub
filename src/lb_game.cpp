@@ -71,7 +71,7 @@ namespace
             {
                 ++_frames;
 
-                if(bn::keypad::start_pressed())
+                if(bn::keypad::start_pressed() && ! _player.dead() && ! _victory_frames)
                 {
                     _pause();
                 }

@@ -56,19 +56,19 @@ void title_scene()
 
     bn::vector<bn::sprite_ptr, 16> title_sprites;
     bn::vector<bn::sprite_ptr, 8> start_sprites;
-    bn::vector<bn::sprite_ptr, 40> info_sprites;
+    bn::vector<bn::sprite_ptr, 48> info_sprites;
     big_text.generate(0, -56, "LEAFBOUND", title_sprites);
     text.generate(0, -36, "A tiny side-scrolling adventure", info_sprites);
-    text.generate(0, 0, "PRESS START", start_sprites);
-    small_text.generate(0, 28, "D-Pad move/climb  A jump", info_sprites);
-    small_text.generate(0, 40, "B attack  R skill  L potion", info_sprites);
-    small_text.generate(0, 52, "Up at a portal to enter", info_sprites);
+    text.generate(0, 20, "PRESS START", start_sprites);
+    small_text.generate(0, 42, "D-Pad move/climb  A jump", info_sprites);
+    small_text.generate(0, 54, "B attack  R skill  L potion", info_sprites);
+    small_text.generate(0, 66, "Up at a portal to enter", info_sprites);
 
     bn::vector<bn::sprite_ptr, 4> actors;
-    actors.push_back(bn::sprite_items::spr_player.create_sprite(-40, -10));
-    actors.push_back(bn::sprite_items::spr_snail.create_sprite(-80, -2));
-    actors.push_back(bn::sprite_items::spr_slime.create_sprite(64, -2));
-    actors.push_back(bn::sprite_items::spr_mushroom.create_sprite(88, -2));
+    actors.push_back(bn::sprite_items::spr_player.create_sprite(-24, -8));
+    actors.push_back(bn::sprite_items::spr_snail.create_sprite(-72, 0));
+    actors.push_back(bn::sprite_items::spr_slime.create_sprite(48, 0));
+    actors.push_back(bn::sprite_items::spr_mushroom.create_sprite(76, 0));
 
     fade_in();
     wait_for_start(start_sprites);
@@ -84,7 +84,7 @@ void game_over_scene()
     big_text.set_center_alignment();
     text.set_center_alignment();
 
-    bn::vector<bn::sprite_ptr, 16> sprites;
+    bn::vector<bn::sprite_ptr, 32> sprites;
     bn::vector<bn::sprite_ptr, 8> start_sprites;
     big_text.generate(0, -32, "YOU FELL", sprites);
     text.generate(0, 0, "You wake up in Mossy Meadow,", sprites);
@@ -124,7 +124,7 @@ void victory_scene(const stats& st, int frames)
 
     time_line += bn::to_string<4>(seconds % 60);
 
-    bn::vector<bn::sprite_ptr, 40> sprites;
+    bn::vector<bn::sprite_ptr, 64> sprites;
     bn::vector<bn::sprite_ptr, 8> start_sprites;
     big_text.generate(0, -50, "VICTORY!", sprites);
     text.generate(0, -20, "The Golem is defeated and", sprites);

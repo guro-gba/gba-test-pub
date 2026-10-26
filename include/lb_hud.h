@@ -41,7 +41,7 @@ namespace lb
         bn::vector<bn::sprite_ptr, 8> _labels;
         bn::vector<bn::sprite_ptr, 4> _level_text;
         bn::vector<bn::sprite_ptr, 4> _potion_text;
-        bn::vector<bn::sprite_ptr, 12> _message_text;
+        bn::vector<bn::sprite_ptr, 16> _message_text;
         int _shown_level = -1;
         int _shown_potions = -1;
         int _message_frames = 0;

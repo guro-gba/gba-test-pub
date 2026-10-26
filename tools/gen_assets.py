@@ -508,8 +508,8 @@ def build_maps():
     m.decor = [(30, 50, 2), (80, 70, 3), (120, 30, 2), (150, 75, 3), (20, 70, 2), (100, 86, 2), (175, 10, 2)]
     maps.append(m)
 
-    # Map 3: Golem's Hall (64x32 tiles). The boss.
-    m = Map("boss", "Golem's Hall", 64, 32, "boss")
+    # Map 3: Golem Hall (64x32 tiles). The boss.
+    m = Map("boss", "Golem Hall", 64, 32, "boss")
     m.fill(0, 0, 64, 2)
     m.fill(0, 0, 3, 32)
     m.fill(61, 0, 64, 32)

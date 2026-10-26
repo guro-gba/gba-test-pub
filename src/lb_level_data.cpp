@@ -450,7 +450,7 @@ namespace
         { "Crystal Caves", bn::regular_bg_items::map_caves, 192, 96, caves_tiles, 64, 160,
           bn::span<const enemy_spawn>(caves_enemies), bn::span<const portal_def>(caves_portals),
           bn::span<const item_def>(caves_items) },
-        { "Golem's Hall", bn::regular_bg_items::map_boss, 64, 32, boss_tiles, 64, 224,
+        { "Golem Hall", bn::regular_bg_items::map_boss, 64, 32, boss_tiles, 64, 224,
           bn::span<const enemy_spawn>(boss_enemies), bn::span<const portal_def>(boss_portals),
           bn::span<const item_def>() },
     };

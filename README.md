@@ -27,7 +27,7 @@ Four connected maps, linked by portals:
 - **Whispering Forest**: a tall climb of platforms and ropes, with the **Flash Jump** feather at the top.
 - **Crystal Caves**: bats, spikes and a deep cavern. The **Spring Boots** at the bottom let you climb the
   shaft to the boss.
-- **Golem's Hall**: the boss fight. Beat the Golem to win.
+- **Golem Hall**: the boss fight. Beat the Golem to win.
 
 There are also three hidden **Heart Crystals** (+25 max HP), one per exploration map, each behind an
 ability. Enemies respawn, drop potions and give EXP; leveling up raises HP, MP and attack and fully heals
