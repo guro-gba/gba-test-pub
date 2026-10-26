@@ -23,13 +23,13 @@ int main()
 {
     bn::core::init();
 
-    bn::bg_palettes::set_transparent_color(bn::color(4, 8, 16));
+    bn::bg_palettes::set_transparent_color(bn::color(21, 30, 25));
 
     bn::sprite_text_generator text_generator(common::variable_8x16_sprite_font);
     text_generator.set_center_alignment();
 
     bn::vector<bn::sprite_ptr, 16> text_sprites;
-    text_generator.generate(0, -64, "Hello, Butano!", text_sprites);
+    text_generator.generate(0, -64, "Hello, Bodhi!", text_sprites);
     text_generator.generate(0, 64, "D-Pad: move   A: reset", text_sprites);
 
     bn::sprite_ptr player = bn::sprite_items::player.create_sprite(0, 0);
